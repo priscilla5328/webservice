@@ -1,0 +1,17 @@
+<h1>Usim Post</h1>
+<p>
+  Show your information! 
+</p>
+<hr>
+
+<input [(ngModel)]="content" placeholder="Add your content" class="input"><br>
+<textarea [(ngModel)]="name" placeholder="Add your name"></textarea>
+
+
+<button mat-raised-button (click)="clickHandler()" [disabled]="content?.length < 2 || content?.length > 200">
+  Add Usim
+</button>
+<hr>
+<div *ngFor="let usim of usims | async">
+  <chinausim-detail [usim]="usim"></chinausim-detail>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>{{ usim.content }}</h3>
+    <h5>{{ usim.name }}</h5>
+    <div class="button-row">
+    <button (click)='addHeartToUsim(usim.hearts)' mat-icon-button color="warn">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button (click)='deleteUsim(usim?.id)' mat-icon-button >
+      <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
+    </button>  
+    
+    <p>This note has been hearted {{ usim.hearts || 0 }} times.</p>
+  </div>
+</div>
+<br>

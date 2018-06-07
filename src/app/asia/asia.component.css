@@ -1,0 +1,8 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://i0.wp.com/www.brooklinelibrary.org/wp-content/uploads/2016/09/1194991885674253778chinese_flag_correct__st_01.svg_.hi_.png?w=600&ssl=1');
+    background-size: cover;
+  }

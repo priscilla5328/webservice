@@ -1,0 +1,17 @@
+<h1>Visa Post</h1>
+<p>
+  Show your information! 
+</p>
+<hr>
+
+<input [(ngModel)]="content" placeholder="Add your content" class="input"><br>
+<textarea [(ngModel)]="name" placeholder="Add your name"></textarea>
+
+
+<button mat-raised-button (click)="clickHandler()" [disabled]="content?.length < 2 || content?.length > 200">
+  Add Note
+</button>
+<hr>
+<div *ngFor="let note of notes | async">
+  <note-detail [note]="note"></note-detail>
+</div>

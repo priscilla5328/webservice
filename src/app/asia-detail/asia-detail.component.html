@@ -1,0 +1,20 @@
+
+
+<mat-toolbar color="#008080" class="example-toolbar" fxHide.gt-xs>
+        <button mat-icon-button (click)="sidenav.open()"><mat-icon>menu</mat-icon></button>
+        <h1 class="example-app-name">ASIA/CHINA</h1>
+    </mat-toolbar>
+<mat-sidenav-container (backdropClick)="close('backdrop')" >
+  <mat-sidenav role="navigation" #sidenav disableClose>
+    <mat-nav-list>
+        <router-outlet><app-menu-list-item *ngFor="let item of navItems" [item]="item"></app-menu-list-item></router-outlet>
+    </mat-nav-list>
+  </mat-sidenav>
+  
+
+</mat-sidenav-container>
+
+
+
+
+

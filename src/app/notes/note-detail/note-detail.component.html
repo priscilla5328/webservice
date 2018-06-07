@@ -1,0 +1,15 @@
+<div class="container">
+    <h3>{{ note.content }}</h3>
+    <h5>{{ note.name }}</h5>
+    <div class="button-row">
+    <button (click)='addHeartToNote(note.hearts)' mat-icon-button color="warn">
+      <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
+    </button>
+    <button (click)='deleteNote(note?.id)' mat-icon-button >
+      <mat-icon aria-label="Example icon-button with a heart icon">delete</mat-icon>
+    </button>  
+    
+    <p>This note has been hearted {{ note.hearts || 0 }} times.</p>
+  </div>
+</div>
+<br>

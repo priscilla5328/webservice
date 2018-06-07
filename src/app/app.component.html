@@ -1,0 +1,60 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}
+  </h1>
+</div>
+<mat-toolbar color="accent">
+  <nav>
+      
+    <a routerLink="/notice">Notice</a>
+    <button mat-button [matMenuTriggerFor]="asia">Asia</button>
+      <mat-menu #asia="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="china">China</button>
+        <button mat-menu-item [matMenuTriggerFor]="india">India</button>
+      </mat-menu>
+      <mat-menu #china="matMenu">
+          <a routerLink="/notelist"><button mat-menu-item>Visa</button></a>
+          <a routerLink="/visalist"><button mat-menu-item>Usim</button></a>
+          <!--a routerLink="/asia/china/trans"><button mat-menu-item>Transport</button></a-->
+      </mat-menu>
+      <mat-menu #india="matMenu">
+          <button mat-menu-item>Visa</button>
+          <button mat-menu-item>Usim</button>
+          <button mat-menu-item>Transport</button>
+      </mat-menu>
+    <button mat-button [matMenuTriggerFor]="usa">USA</button>
+      <mat-menu #usa="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="ohio">Ohio</button>
+        <button mat-menu-item [matMenuTriggerFor]="michigan">Michigan</button>
+      </mat-menu>
+      <mat-menu #ohio="matMenu">
+          <a routerLink="/usa/ohio/visa"><button mat-menu-item>Visa</button></a>
+          <a routerLink="/usa/ohio/usim"><button mat-menu-item>Usim</button></a>
+          <a routerLink="/usa/ohio/trans"><button mat-menu-item>Transport</button></a>
+      </mat-menu>
+      <mat-menu #michigan="matMenu">
+          <button mat-menu-item>Visa</button>
+          <button mat-menu-item>Usim</button>
+          <button mat-menu-item>Transport</button>
+      </mat-menu>
+    <button mat-button [matMenuTriggerFor]="europe">Europe</button>
+      <mat-menu #europe="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="uk">UK</button>
+        <button mat-menu-item [matMenuTriggerFor]="sweden">Sweden</button>
+      </mat-menu>
+      <mat-menu #uk="matMenu">
+          <a routerLink="/europe/london/visa"><button mat-menu-item>Visa</button></a>
+          <a routerLink="/europe/london/usim"><button mat-menu-item>Usim</button></a>
+          <a routerLink="/europe/london/trans"><button mat-menu-item>Transport</button></a>
+      </mat-menu>
+      <mat-menu #sweden="matMenu">
+          <button mat-menu-item>Visa</button>
+          <button mat-menu-item>Usim</button>
+          <button mat-menu-item>Transport</button>
+      </mat-menu>
+    <a routerLink="/community">Community</a>
+    <span class="example-fill-remaining-space"></span>
+  </nav>
+</mat-toolbar>
+<router-outlet></router-outlet>
