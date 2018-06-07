@@ -1,0 +1,86 @@
+<div class="title"><h1>Tutorial Page<small class="title2"> : Just Click step by step</small></h1></div>
+
+
+<mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          About LOGIN!
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="flex-container">
+          <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>1. Click the 'Login Button'</mat-card-title>
+                <mat-card-subtitle>Step1.1</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://postfiles.pstatic.net/MjAxODA1MjhfMTEz/MDAxNTI3NTAyMTM1NTQ0.ikv3uvnDi5GTlA52IZCotkKQObz8ttkxsgQTWuRorFog.fYcKSOc41L7XH6Swk9E8x9zPrvTmIqjRlG3FnhhDYSog.PNG.kwon1183/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2018-05-28_%EC%98%A4%ED%9B%84_7.05.18.png?type=w580">
+            </mat-card>
+          <mat-card class="example-card">
+              <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>2. Put Your ID</mat-card-title>
+                <mat-card-subtitle>Step1.2</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src="https://postfiles.pstatic.net/MjAxODA1MjhfMjQ1/MDAxNTI3NDg0MjAxODc1.VAC3UGH0EDggGcnR_wPY5p0cebzYyijrN42B2q4ZIN8g.uIXYEKczU9ptW-IyUbdyo0PyuqpqT-uUVwXD8-nr-J8g.PNG.kwon1183/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2018-05-28_%EC%98%A4%ED%9B%84_2.04.51.png?type=w580">
+            </mat-card>
+            <mat-card class="example-card">
+                <mat-card-header>
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>3. Put Your Passward</mat-card-title>
+                  <mat-card-subtitle>Step1.3</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="https://postfiles.pstatic.net/MjAxODA1MjhfODkg/MDAxNTI3NDg0MjY3Nzcx.i9w1As5iavxYWPl5nVa52yEanNqv-4KdcdQ0utKmDGcg.xmNIZK6nPl6r5BZF2fvGD5lzOlh0G5jhJYCKT8S6Ggog.PNG.kwon1183/image_572950061527484108695.png?type=w580">
+              </mat-card>
+              <mat-card class="example-card">
+                  <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>4. You can access all depts!</mat-card-title>
+                    <mat-card-subtitle>Step1.4</mat-card-subtitle>
+                  </mat-card-header>
+                  <img mat-card-image src="">
+                </mat-card>
+        </div>
+      </mat-expansion-panel>
+ 
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            About Getting INFORMATION!
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        About COMMUNITY!
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        About WRITING!
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+</mat-expansion-panel>
+
+<mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        QUICK VIDEO TUTORIAL
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div><youtube-player width="600px" height="480px"
+    [videoId]="id"
+    (ready)="savePlayer($event)"
+    (change)="onStateChange($event)"
+    ></youtube-player></div>
+</mat-expansion-panel>
+
+    </mat-accordion><br>
+        <div><a routerLink="/Login"><button mat-button color="primary">Skip Tutorial & Get Start</button></a></div>
+

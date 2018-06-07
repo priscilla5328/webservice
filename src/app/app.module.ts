@@ -1,6 +1,8 @@
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { YoutubePlayerModule } from 'ngx-youtube-player';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppComponent } from './app.component';
 import { AsiaComponent } from './asia/asia.component';
@@ -28,6 +30,7 @@ import { LondonTransComponent } from './london-trans/london-trans.component';
 import { OhioTransComponent } from './ohio-trans/ohio-trans.component';
 import { OhioVisaComponent } from './ohio-visa/ohio-visa.component';
 import { OhioUsimComponent } from './ohio-usim/ohio-usim.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
@@ -58,7 +61,8 @@ import { WritepageComponent } from './writepage/writepage.component';
     OhioTransComponent,
     OhioVisaComponent,
     OhioUsimComponent,
-    WritepageComponent
+    WritepageComponent,
+    TutorialComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -74,7 +78,8 @@ import { WritepageComponent } from './writepage/writepage.component';
     FormsModule,
     ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production }),
     NotesModule,
-    ChinausimModule
+    ChinausimModule,
+    YoutubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,6 +22,7 @@ import { OhioUsimComponent } from './ohio-usim/ohio-usim.component';
 import { WritepageComponent } from './writepage/writepage.component';
 import { NotesListComponent } from './notes/notes-list/notes-list.component';
 import { ChinausimListComponent } from './chinausim/chinausim-list/chinausim-list.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 const routes: Routes = [
   { path: 'notice', component: NoticeComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'europe', component: EuropeComponent },
   { path: 'etc', component: EtcComponent },
   { path: 'community', component: CommunityComponent },
+  { path: 'tutorial', component: TutorialComponent },
   { path: '', redirectTo: '/notice', pathMatch: 'full' },
   { path: 'europe/london/visa', component: LondonVisaComponent},
   { path: 'europe/london/usim', component: LondonUsimComponent},
