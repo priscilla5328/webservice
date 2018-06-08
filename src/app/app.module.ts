@@ -10,7 +10,6 @@ import { NoticeComponent } from './notice/notice.component';
 import { EuropeComponent } from './europe/europe.component';
 import { EtcComponent } from './etc/etc.component';
 import { CommunityComponent } from './community/community.component';
-import { AsiaDetailComponent } from './asia-detail/asia-detail.component';
 import { UsaComponent } from './usa/usa.component';
 import { UsaDetailComponent } from './usa-detail/usa-detail.component';
 import { EuropeDetailComponent } from './europe-detail/europe-detail.component';
@@ -23,7 +22,6 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
-import { MenuListItemComponent } from './menu-list-item/menu-list-item.component';
 import { LondonVisaComponent } from './london-visa/london-visa.component';
 import { LondonUsimComponent } from './london-usim/london-usim.component';
 import { LondonTransComponent } from './london-trans/london-trans.component';
@@ -49,12 +47,10 @@ import { WritepageComponent } from './writepage/writepage.component';
     EuropeComponent,
     EtcComponent,
     CommunityComponent,
-    AsiaDetailComponent,
     UsaComponent,
     UsaDetailComponent,
     EuropeDetailComponent,
     EtcDetailComponent,
-    MenuListItemComponent,
     LondonVisaComponent,
     LondonUsimComponent,
     LondonTransComponent,

@@ -9,7 +9,7 @@ import { EuropeComponent } from './europe/europe.component';
 import { EtcComponent } from './etc/etc.component';
 import { CommunityComponent } from './community/community.component';
 
-import { AsiaDetailComponent } from './asia-detail/asia-detail.component';
+
 import { UsaDetailComponent } from './usa-detail/usa-detail.component';
 import { EuropeDetailComponent } from './europe-detail/europe-detail.component';
 import { EtcDetailComponent } from './etc-detail/etc-detail.component';

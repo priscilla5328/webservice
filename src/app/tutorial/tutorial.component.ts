@@ -9,7 +9,7 @@ import { MaterialModule } from '../material/material.module';
 })
 export class TutorialComponent implements OnInit {
   player:YT.Player;
-  private id: string = 'QwCPh4HDDsc';
+  public id: string = 'QwCPh4HDDsc';
   
   savePlayer(player){
     this.player = player;
